@@ -1,0 +1,48 @@
+This is my constructor for Karina
+This is my constructor for hallo
+This is moving constructor for Karina
+This is moving assignment for hallo
+This is moving assignment for Karina
+This is the the destructor for  empty string
+after swap 
+This is my constructor for , 
+This is the copy constructor for hallo
+This is moving constructor for hallo, 
+This is moving constructor for hallo, Karina
+hallo, Karina
+This is the the destructor for hallo, Karina
+This is the the destructor for  empty string
+This is the the destructor for  empty string
+This is the the destructor for , 
+This is my constructor for this is a string
+this is a string
+This is the the destructor for this is a string
+This is my constructor for !
+This is the copy constructor for hallo
+This is moving constructor for hallo!
+This is moving assignment for hallo!
+This is the the destructor for Karina
+This is the the destructor for  empty string
+This is the the destructor for !
+This is my constructor for zz
+before:
+This is my constructor for cc
+reference greater zz cc
+This is my constructor for c
+This is my constructor for b
+This is moving constructor for bc
+This is my constructor for aa
+moving greater aa bc
+reference greater bc zz
+This is the copy constructor for zz
+This is the the destructor for aa
+This is the the destructor for bc
+This is the the destructor for  empty string
+This is the the destructor for c
+This is the the destructor for cc
+after:
+max = zz
+This is the the destructor for zz
+This is the the destructor for zz
+This is the the destructor for hallo!
+This is the the destructor for hallo
