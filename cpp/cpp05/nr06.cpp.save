@@ -1,0 +1,38 @@
+
+#include <fstream>
+#include <iostream>
+#include <random>
+
+#include "listtest.h"
+#include "vectortest.h"
+#include "timer.h"
+
+
+int main( int argc, char* argv [] )
+{  std::vector<std::string> smth;
+   std::ifstream inp{"text.txt"};
+   smth = vectortest::readfile(inp);
+   std::vector<std::string> random = vectortest::randomstrings(100, 50);
+   std::list<std::string> ranlist = listtest::converter(random);
+
+
+
+   std::vector< std::string > vect;
+
+//   std::cout << random  << "\n";
+
+   // Or use timer:
+
+   auto t1 = std::chrono::high_resolution_clock::now( ); 
+   listtest::sort_move(ranlist);
+   
+   auto t2 = std::chrono::high_resolution_clock::now( );
+
+   std::chrono::duration< double > d = ( t2 - t1 );
+ //  std::cout << random  << "\n";
+
+   std::cout << "sorting took " << d. count( ) << " seconds\n";
+   return 0;
+}
+
+
