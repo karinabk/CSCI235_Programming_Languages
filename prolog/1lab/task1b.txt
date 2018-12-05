@@ -1,0 +1,10 @@
+1b)When 'is' predicate is used the answer is computed while when '=' is used the
+ answer is given in the nested form using brackets and without computing it.
+For example, factorial of 6 using '=':
+fact(6, X).
+X = 6*(5*(4*(3*(2*(1*1))))) 
+
+using 'is' :
+
+fact(6, X).
+X = 720
