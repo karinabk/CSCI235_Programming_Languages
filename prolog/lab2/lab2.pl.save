@@ -1,0 +1,22 @@
+cartesian([],X,[]).
+
+cartesian([F|R], X, C3 ) :- cartesian(R,X,C1),
+			    product(F,X,C2),
+			    append( C1,C2,C3).
+
+%product(X,L,R): product(a, [1,2] , [pair(a,1),pair(b,2)].
+
+product(X,[], []).
+product(X,[F|R] , [pair(X,F)|L]):- product( X,R,L).
+
+
+%deepmember(X, [X | R]).
+%deepmember(X,[F|R]) :- deepmember(X,F).
+%deepmember(X,[F|R]) :- deepmember(X,R).
+
+
+
+:- member(X, Y).
+
+deepmember(X, [F | _]) :- deepmember(X, F); X = F.
+deepmember(X, [_ | R]) :- deepmember(X, R).
